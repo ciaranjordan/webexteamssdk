@@ -32,10 +32,11 @@ class OpenUrl(AdaptiveCardComponent):
     def __init__(self, url, title=None, iconURL=None):
         self.title = title
         self.iconURL = iconURL
+        self.url = url
 
         super().__init__(
             serializable_properties=[],
-            simple_properties=['type', 'title', 'iconURL'],
+            simple_properties=['type', 'title', 'iconURL', 'url'],
         )
 
 
